@@ -16,7 +16,7 @@
   max-width: 30.00%;
   padding: 15px;
   margin-top: auto;
-    margin-bottom:auto;
+  margin-bottom:auto;
 }
 
 .container {
@@ -231,4 +231,107 @@ body {
 #logo{
     width: 10em;
     height: 10em;
+}
+
+@media screen and (max-width: 800px) {
+  #logo{
+    width: 5em;
+    height: 5em;
+}
+
+.col {  
+  flex: 10%;
+  max-width: 80.00%;
+  padding: 0px;
+  margin-top: auto;
+  margin-bottom:auto;
+  font-size: 16px;
+}
+
+.btn {
+
+  color: white;
+  padding: 5px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+ /* display: inline-block;*/
+  font-size: 35px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -ms-grid-row: auto;
+  height: 75%;
+  width: 75%;
+  border-radius: 25px;
+  position: relative;
+  
+}
+
+footer {
+  visibility: hidden;
+  
+}
+
+.container {
+  width: 80%;
+  text-align: center;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35%;
+  margin-bottom:10%;
+  display: flex;
+  justify-content: center;
+}
+
+.game-restart {
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  display: grid;
+  font-size: 30px;
+  margin:auto;
+  /*cursor: pointer;*/
+  border-radius: 5px;
+  position: relative;
+  background-color: #a5be00;
+  width: 70%;
+ 
+}
+
+.game--status {
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  display: grid;
+  font-size: 30px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  background-color: #a5be00;
+  width: max-content;
+}
+
+.back{
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  display: grid;
+  font-size: 30px;
+  margin:auto;
+ /* cursor: pointer;*/
+  border-radius: 5px;
+  position: relative;
+  background-color: #a5be00;
+  width: max-content;
+  margin-bottom: 10%;
+  text-align: right;
+  margin-right: 5%;
+}
+
 }

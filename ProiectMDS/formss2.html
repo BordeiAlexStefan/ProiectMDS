@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Form</title>
+</head>
+<body>
+
+
+    <form action="./multiplayer.html">
+        <div class="formular">
+        <h2 class="player">Jucătorul 1</h2>
+        <label for="fname">Cum te numești?</label><br>
+        <input type="text" name="fname" placeholder="John" required><br>
+        <label for="x/0">Alege jucătorul</label><br>
+        <select id="x/0" name="x/0" class="optiuni" onchange="selectareOponent()">
+            <option value="x">X</option>
+            <option value="0">O</option>
+        </select> <br>
+        <script>
+            function selectareOponent() {
+                var x = document.getElementById("x/0").value;
+                if (x == "x")
+                    document.getElementById("oponent").value = "O";
+                else
+                    document.getElementById("oponent").value = "X";
+            }
+        </script>
+        </div>
+        <div class ="formular2">
+          <h2 class="player">Jucătorul 2</h2>
+          <label for="fname2">Cum te numești?</label><br>
+          <input type="text" name="fname2" placeholder="John" required><br>
+          <label for="x/02">Alege jucătorul</label><br>
+          <input id ="oponent" type="text"  placeholder="Se va alege automat" required readonly><br>
+
+          <div id="s_button">
+            <input type="submit" value="Submit" id="done">
+            </div>
+        </div>
+    </form>
+
+        
+
+
+</body>
+</html>

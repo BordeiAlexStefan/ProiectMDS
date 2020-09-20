@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleplayer</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript">
+     //   var nume = prompt("Cum te numesti?", "name");
+
+
+        //newTitle = 'Salut' + " " + nume;
+        oldTitle = document.title;
+
+        function updateTitle() {
+            document.getElementsByTagName('title')[0].innerHTML = newTitle;
+            //document.title = newTitle;
+            //newDescription = "avem un nou vizitator"
+            setTimeout(function() {
+                document.getElementsByTagName('title')[0].innerHTML = oldTitle;
+                //document.title = newTitle;
+                //newDescription = "avem un nou vizitator"
+            }, 2000);
+        }
+
+        /*if (nume != null) {
+            if (document.title != newTitle) {
+    
+                document.title = newTitle;
+                newDescription = "avem un nou vizitator"
+            }
+        }*/
+    </script>
+</head>
+<body>
+
+
+    <header>
+        <div class="row">
+
+            <div class="col"> <img id="logo" src="https://static1.squarespace.com/static/5db77379adbeba4fb772a65c/t/5f661e9c6875941e58c28feb/1600528028467/xsi0logo.png" alt="logo"> </div>
+           <div class="col"> <h1> X și O  </h1> </div>
+ 
+ 
+            <div class="col"><button onclick="window.location.href='./home.html'" class="back"> Back</button>   </div>
+            </div>
+    </header>
+
+
+
+    <section>
+        <div class ="row">
+            <div class="col">
+                <h2 class="game--status"></h2>
+            </div>
+        <div class="col">
+        <div class="game-container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+    </div>
+    
+    <div class="col"></div>
+    </div>
+        <button class="game-restart">Restart Game</button>
+    
+    </section>
+    <script src="1p.js"></script>
+</body>
+
+<footer>
+    <p> Copyright &copy; 2020 </p>
+</footer>
+
+</html>

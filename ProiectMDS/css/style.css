@@ -1,0 +1,245 @@
+/*#branding {
+   
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    height: 10em;
+}*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.col {  
+  flex: 10%;
+  max-width: 30.00%;
+  padding: 15px;
+  margin-top: auto;
+    margin-bottom:auto;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom:10%;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    background:#1b512d;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 100px;
+    border-bottom: #3a1a3d;
+}
+
+header h1 {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top:-5% ;
+}
+.formular{
+    border-radius: 5px;
+    background-color: #1B512D;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 10%;
+    
+}
+.formular2{
+  border-radius: 5px;
+  background-color: #1B512D;
+  padding: 20px;
+ 
+  width: 300px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 10%;
+}
+form label{
+    color: #ffffff;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+   
+  }
+
+#done{
+    color: #ffffff;
+    background-color: #B1CF5F;
+}
+#s_button{
+  text-align: center;
+    
+}
+.btn {
+
+    color: white;
+    padding: 15px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+   /* display: inline-block;*/
+    font-size: 36px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -ms-grid-row: auto;
+    height: 25%;
+    width: 25%;
+    border-radius: 25px;
+    position: relative;
+    
+  }
+.player{
+  color: #ffffff;
+}
+.btn3{
+  color: white;
+  padding: 15px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+ /* display: inline-block;*/
+  font-size: 36px;
+  margin: 4px 2px;
+  cursor: pointer;
+  height: 25%;
+  width: 25%;
+  border-radius: 25px;
+  position: relative;
+}
+  .btn:hover {background-color: #3e8e41;}
+  .btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .btn1 {background-color: #679436;   
+    
+} /* Green */
+  .btn2 {background-color: #a5be00;} /* Blue */
+
+  .game-restart {
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: grid;
+    font-size: 36px;
+    margin:auto;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    background-color: #a5be00;
+    width: max-content;
+   
+  }
+  .game--status {
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: grid;
+    font-size: 36px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    background-color: #a5be00;
+    width: max-content;
+  }
+  .back{
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    display: grid;
+    font-size: 36px;
+    margin:auto;
+   /* cursor: pointer;*/
+    border-radius: 5px;
+    position: relative;
+    background-color: #a5be00;
+    width: max-content;
+    margin-bottom: 10%;
+    text-align: right;
+    margin-right: 5%;
+  }
+  .cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 10px solid rgb(49, 158, 49);
+    border-radius: 5px;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+    text-align: center;
+    
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 360px;
+    margin: auto;
+    padding: 15px 15px;
+    position: relative;
+}
+
+  footer {
+    padding: 10px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color:#b1cf5f;
+    text-align: center;
+    align-items: baseline;
+}
+
+
+
+body {
+    background-color:#def4c6;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.8;
+    text-shadow: 4px 4px 4px rgb(80, 68, 68);
+}
+#logo{
+    width: 10em;
+    height: 10em;
+}
+@media only screen and (max-width: 600px) {
+    body {
+        font-family: "Lora", serif;
+        font-size: 18px;
+        line-height: 1.2;
+        padding: 0;
+        margin: 0;
+        text-shadow: 4px 4px 4px rgb(80, 68, 68);
+        background-color: #2f2c3a;
+        display: block;
+    }}

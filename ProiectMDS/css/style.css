@@ -232,14 +232,3 @@ body {
     width: 10em;
     height: 10em;
 }
-@media only screen and (max-width: 600px) {
-    body {
-        font-family: "Lora", serif;
-        font-size: 18px;
-        line-height: 1.2;
-        padding: 0;
-        margin: 0;
-        text-shadow: 4px 4px 4px rgb(80, 68, 68);
-        background-color: #2f2c3a;
-        display: block;
-    }}
